@@ -1,0 +1,224 @@
+.content {
+    margin-top: 70px;
+}
+.undecorated-link:hover {
+    text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+.ng-invalid.ng-dirty {
+    border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+    border-color: #78FA89;
+}
+
+body {
+    overflow: hidden;
+    background-color: #fdf8fe;
+}
+
+
+/*---------------------------------------------------------
+Twitter Bootstrap Navbar Custom Styling
+---------------------------------------------------------*/
+.navbar-wrapper {
+    position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    z-index: 20;
+}
+
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+.right-inner-addon {
+    position: relative;
+        top: 8px;
+        right: 1px;
+    height: 3px;
+}
+
+.right-inner-addon input {
+    padding-right: 30px;
+}
+
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+}
+
+/*Responsive CSS*/
+@media (min-width: 768px) {
+
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+}
+
+/*---------------------------------------------------------
+Slider Components
+---------------------------------------------------------*/
+.slider {
+    width: 70%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background: #e6e6e6;
+    border: 20px solid #FFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 1002;
+    display: block;
+    top: 50%;
+    margin-top: -35px;
+    width: 36px;
+    height: 71px;
+    outline: none;
+    cursor: pointer;
+    background: url(../../../images/arrows/blank.gif) no-repeat;
+}
+
+.arrow.prev {
+    opacity: 0.2;
+    left: 20px;
+    background-image: url(../../../images/arrows/paddle_prev_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.next {
+    opacity: 0.2;
+    right: 20px;
+    background-image: url(../../../images/arrows/paddle_next_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.prev:hover {
+    opacity: 1;
+    background-image: url(../../../images/arrows/paddle_prev_fff.png);
+}
+
+.arrow.next:hover {
+    opacity: 1;
+    background-image: url(../../../images/arrows/paddle_next_fff.png);
+}
+
+
+
+/*---------------------------------------------------------
+Slider navigation
+---------------------------------------------------------*/
+
+.slidenav {
+    text-align: center;
+    display: block;
+    position: absolute;
+    z-index: 1002;
+    left: 0;
+    bottom: -4px;
+    right: 0;
+    height: 48px;
+}
+
+.nonDraggableImage{
+    -webkit-user-drag: none;
+}
+
+.slidenav .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em 0 .8em;
+}
+
+.slidenav ul {
+    margin: 0;
+    width: 100%;
+}
+
+.slidenav .dot, .slidenav .dot a {
+    display: inline-block;
+    zoom: 1;
+}
+
+.dots .dot {
+    position: relative;
+    margin: 0 8px;
+    width: 12px;
+    height: 12px;
+}
+
+.dots .dot a {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 9px;
+    height: 9px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #FFF;
+    border: 1px solid transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s, border-color 0.25s;
+    -moz-transition: background-color 0.25s, border-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+.dots .dot a.active {
+    border-color: #FFF;
+    background-color: transparent;
+}
+
+
+
+/*---------------------------------------------------------
+Google maps component
+---------------------------------------------------------*/
+.angular-google-map-container {
+    height: 400px;
+}

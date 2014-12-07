@@ -1,0 +1,13 @@
+<meta name="viewport" content="width=device-width, initial scale=1">
+
+<!-- JS Injection ============================================================================================= -->
+{% for jsHeadFile in jsHeadFiles %}
+<script type="text/javascript" src="{{jsHeadFile}}"></script>
+{% endfor %}
+
+<!-- CSS Injection ============================================================================================ -->
+{% for cssHeadFile in cssHeadFiles %}
+<link rel="stylesheet" href="{{cssHeadFile}}"/>
+{% endfor %}
+
+<title>{{title}}</title>

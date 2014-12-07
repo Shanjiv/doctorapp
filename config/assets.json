@@ -1,0 +1,88 @@
+{
+		"lib": {
+				"css": {
+						"head": {
+								"public/dist/head.lib.min.css": [
+										"public/lib/bootstrap/dist/css/bootstrap.css",
+										"public/lib/fontawesome/css/font-awesome.css"
+								]
+						},
+						"header": {
+								"public/dist/header.lib.min.css": []
+						},
+						"footer": {
+								"public/dist/footer.lib.min.css": []
+						}
+				},
+				"js": {
+						"head": {
+								"public/dist/head.lib.min.js": [
+
+								]
+						},
+						"header": {
+								"public/dist/header.lib.min.js": [
+
+								]
+						},
+						"footer": {
+								"public/dist/footer.lib.min.js": [
+										"public/lib/jquery/dist/jquery.js",
+										"public/lib/angular/angular.js",
+										"public/lib/angular-ui-router/release/angular-ui-router.js",
+										"public/lib/angular-animate/angular-animate.js",
+										"public/lib/angular-touch/angular-touch.js",
+										"public/lib/gsap/src/uncompressed/TweenMax.js",
+										"public/lib/angular-bootstrap/ui-bootstrap-tpls.js",
+										"public/lib/bootstrap/dist/js/bootstrap.js",
+										"public/lib/angular-resource/angular-resource.js",
+										"public/lib/angular-ui-utils/ui-utils.js",
+										"public/lib/lodash/dist/lodash.min.js",
+										"public/lib/angular-google-maps/dist/angular-google-maps.min.js"
+								]
+						}
+				}
+		},
+		"app": {
+				"css": {
+						"head": {
+								"public/dist/head.app.min.css": [
+										"public/modules/*/css/*.css"
+								]
+						},
+						"header": {
+								"public/dist/header.app.min.css": []
+						},
+						"footer": {
+								"public/dist/footer.app.min.css": []
+						}
+				},
+				"js": {
+						"head": {
+								"public/dist/head.app.min.js": [
+
+								]
+						},
+						"header": {
+								"public/dist/header.app.min.js": [
+								]
+						},
+						"footer": {
+								"public/dist/footer.app.min.js": [
+										"public/modules/application.js",
+										"public/config.js",
+										"public/application.js",
+										"public/modules/*/*.js",
+										"public/modules/*/config/*.js",
+										"public/modules/**/controllers/*.js",
+										"public/modules/*/services/*.js"
+
+								]
+						}
+				},
+				"testing": [
+						"public/lib/angular-mocks/angular-mocks.js",
+						"public/modules/*/tests/*.js"
+				]
+		}
+}

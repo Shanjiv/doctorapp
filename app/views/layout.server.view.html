@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Head section-->
+  {% include 'templates/head.server.view.html' %}
+</head>
+
+<body class="ng-cloak">
+  <!--Header section-->
+  {% include 'templates/header.server.view.html' %}
+
+  <!--Content section-->
+  <section class="content">
+    <section class="container">
+      {% block content %}{% endblock %}
+    </section>
+  </section>
+
+  <!--Footer section-->
+  {% include "templates/footer.server.view.html" %}
+</body>
+</html>

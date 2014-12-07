@@ -1,0 +1,9 @@
+<!-- JS Injection ============================================================================================= -->
+{% for jsFooterFile in jsFooterFiles %}
+<script type="text/javascript" src="{{jsFooterFile}}"></script>
+{% endfor %}
+
+<!-- CSS Injection ============================================================================================ -->
+{% for cssFooterFile in cssFooterFiles %}
+<link rel="stylesheet" href="{{cssFooterFile}}">
+{% endfor %}

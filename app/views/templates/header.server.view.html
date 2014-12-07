@@ -1,0 +1,19 @@
+<!-- JS Injection ============================================================================================= -->
+{% for jsHeaderFile in jsHeaderFiles %}
+<script type="text/javascript" src="{{jsHeaderFile}}"></script>
+{% endfor %}
+
+<!-- CSS Injection ============================================================================================ -->
+{% for cssHeaderFile in cssHeaderFiles %}
+<link rel="stylesheet" href="{{cssHeaderFile}}">
+{% endfor %}
+
+<!--Meta data-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Navigation bar injection -->
+<header data-ng-include="'/modules/core/views/header.client.view.html'"></header>
+
+<!--Google Maps API Integration-->
+<!--Note how the language setting for Google API has been set to German-->
+<script src='//maps.googleapis.com/maps/api/js?sensor=false&language=de'></script>
